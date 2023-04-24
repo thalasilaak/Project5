@@ -7,7 +7,7 @@
     tools:context=".CoffeeView">
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/sweetCream"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -17,27 +17,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/caramel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
         android:layout_marginBottom="12dp"
         android:text="Caramel"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox5"
-        app:layout_constraintStart_toEndOf="@+id/checkBox" />
+        app:layout_constraintBottom_toTopOf="@+id/irishCream"
+        app:layout_constraintStart_toEndOf="@+id/sweetCream" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/vanilla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="119dp"
         android:text="French Vanilla"
-        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintBottom_toTopOf="@+id/numCups"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/mocha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
@@ -47,35 +47,35 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/irishCream"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="433dp"
         android:text="Irish Cream"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBox4" />
+        app:layout_constraintStart_toEndOf="@+id/mocha" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/cupSize"
         android:layout_width="181dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="11dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/cupSizeText"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/numCups"
         android:layout_width="178dp"
         android:layout_height="48dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/numCupsText"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/cupSizeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
@@ -85,7 +85,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/numCupsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="39dp"
@@ -95,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/coffeeSubtotalText"
         android:layout_width="90dp"
         android:layout_height="59dp"
         android:layout_marginStart="76dp"
@@ -117,7 +117,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/addCoffee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="35dp"
@@ -127,11 +127,12 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
+        android:id="@+id/coffeeSubtotal"
         android:layout_width="161dp"
         android:layout_height="58dp"
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/addCoffee"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

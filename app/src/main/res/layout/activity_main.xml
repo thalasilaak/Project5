@@ -47,6 +47,7 @@
         android:layout_marginBottom="401dp"
         android:adjustViewBounds="true"
         android:contentDescription="Coffee"
+        android:onClick="clickCoffee"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
