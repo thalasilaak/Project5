@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     /**String welcomeText = "Rutgers Cafe";
      ImageButton CoffeeButton;
      */
-    private static Order currentOrder = new Order();
+    public static Order currentOrder = new Order();
     private static StoreOrder storeOrder = new StoreOrder();
 
     public static Order getOrder() {

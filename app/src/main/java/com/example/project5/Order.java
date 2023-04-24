@@ -115,4 +115,17 @@ public class Order {
         }
         return res;
     }
+
+
+    public int getNumItemsInList(){
+        return this.size;
+    }
+
+    public double getSubTotal(){
+        return this.getSubTotal();
+    }
+
+    public double getTotal(){
+        return this.price;
+    }
 }
