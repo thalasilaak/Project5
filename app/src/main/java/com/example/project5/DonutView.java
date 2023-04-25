@@ -60,7 +60,7 @@ public class DonutView extends AppCompatActivity implements AdapterView.OnItemSe
 
  public void enable(){
  selectDonutFlavor.getItems().clear();
- String bTypes = donutType.getSelectionModel().getSelectedItem().toString();
+ String bTypes = donutType.getSelectedItem().toString();
  if(bTypes.equals("Yeast Donut")){
  for(int i = 0; i < Donut.yFlavors.length; i++){
  selectDonutFlavor.getItems().add(Donut.yFlavors[i]);

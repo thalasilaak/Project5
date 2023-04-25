@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,8 +26,9 @@ public class MainActivity extends AppCompatActivity {
         return storeOrder;
     }
 
-
-
+    public static StoreOrder getStoreOrders() {
+        return storeOrder;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickOrder(View view) {
-        Intent intent = new Intent(MainActivity.this, Order.class);
+        Intent intent = new Intent(MainActivity.this, OrderView.class);
         Toast.makeText(MainActivity.this, "View Your Order", Toast.LENGTH_SHORT).show();
         startActivity(intent);
     }

@@ -20,12 +20,12 @@ import java.util.ArrayList;
 
 
 public class OrderView extends AppCompatActivity {
-    EditText total = (EditText)findViewById(R.id.totalYourOrder);
-    EditText salestax = (EditText)findViewById(R.id.salestaxYourOrder);
-    EditText subtotal = (EditText)findViewById(R.id.subtotalYourOrder);
-    ListView listOfItems = (ListView)findViewById(R.id.listOfItems);
-    Button placeOrder = (Button)findViewById(R.id.placeYourOrder);
-    Button removeSelectedItem = (Button)findViewById(R.id.removeSelectedItem);
+    EditText total = findViewById(R.id.totalYourOrder);
+    EditText salestax = findViewById(R.id.salestaxYourOrder);
+    EditText subtotal = findViewById(R.id.subtotalYourOrder);
+    ListView listOfItems = findViewById(R.id.listOfItems);
+    Button placeOrder = findViewById(R.id.placeYourOrder);
+    Button removeSelectedItem = findViewById(R.id.removeSelectedItem);
 
     protected final double sales = .06625;
 
